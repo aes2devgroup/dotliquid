@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DotLiquid")]
 [assembly: AssemblyDescription("DotLiquid is a templating system ported to the .NET framework from Ruby’s Liquid Markup.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Formosatek Ltd")]
+[assembly: AssemblyCompany("Formosatek Ltd; Aldrich Solutions")]
 [assembly: AssemblyProduct("DotLiquid")]
 [assembly: AssemblyCopyright("Copyright © Formosatek Ltd and contributors 2011")]
 [assembly: AssemblyTrademark("")]

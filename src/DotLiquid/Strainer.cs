@@ -148,13 +148,13 @@ namespace DotLiquid
                     var parameterType = parameterInfos[argumentIndex].ParameterType;
                     if (convertibleArg.GetType() != parameterType
                         && !parameterType
-#if NETSTANDARD1_3
+#if NETSTANDARD2_0
                             .GetTypeInfo()
 #endif
                             .IsAssignableFrom(
                                 convertibleArg
                                     .GetType()
-#if NETSTANDARD1_3
+#if NETSTANDARD2_0
                                     .GetTypeInfo()
 #endif
                                     )

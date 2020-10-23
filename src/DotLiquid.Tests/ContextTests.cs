@@ -682,12 +682,12 @@ namespace DotLiquid.Tests
                 localVariables: Hash.FromAnonymousObject(new { context = TimeSpan.FromDays(1) }));
 
             Helper.AssertTemplateResult(
-                expected: "1/1/0001 12:00:00 AM",
+                expected: "1/1/0001 00:00:00",
                 template: "{{context}}",
                 localVariables: Hash.FromAnonymousObject(new { context = DateTime.MinValue }));
 
             Helper.AssertTemplateResult(
-                expected: "9/10/2013 12:10:32 AM +01:00",
+                expected: "9/10/2013 00:10:32 +01:00",
                 template: "{{context}}",
                 localVariables: Hash.FromAnonymousObject(new { context = new DateTimeOffset(2013, 9, 10, 0, 10, 32, new TimeSpan(1, 0, 0)) }));
 
